@@ -41,11 +41,11 @@
             border-bottom: 2px solid orange;
             padding-bottom: 10px;
         }
-        .skills, .projects {
+        .skills, .projects, .gallery {
             display: flex;
             flex-wrap: wrap;
         }
-        .skill, .project {
+        .skill, .project, .gallery-item {
             flex: 1 1 calc(33% - 20px);
             margin: 10px;
             padding: 20px;
@@ -56,6 +56,10 @@
             text-align: center;
             padding: 20px;
             background-color: lightblue;
+        }
+        .gallery-item img {
+            max-width: 100%;
+            border-radius: 5px;
         }
     </style>
 </head>
@@ -82,6 +86,19 @@
                     <p>Brief description of project 2.</p>
                 </div>
                 <!-- Add more projects as needed -->
+            </div>
+        </section>
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery">
+                <!-- Add images of your work -->
+                <div class="gallery-item">
+                    <img src="path_to_image1.jpg" alt="Image 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="path_to_image2.jpg" alt="Image 2">
+                </div>
+                <!-- Add more images as needed -->
             </div>
         </section>
         <section id="skills">
