@@ -10,7 +10,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: url('ship_background.jpg') no-repeat center center fixed;
+            background: url('boatcarvan.jpeg') no-repeat center center fixed;
             background-size: cover;
             color: #333;
         }
@@ -41,11 +41,11 @@
             border-bottom: 2px solid orange;
             padding-bottom: 10px;
         }
-        .skills, .projects {
+        .skills, .projects, .gallery {
             display: flex;
             flex-wrap: wrap;
         }
-        .skill, .project {
+        .skill, .project, .gallery-item {
             flex: 1 1 calc(33% - 20px);
             margin: 10px;
             padding: 20px;
@@ -57,6 +57,10 @@
             padding: 20px;
             background-color: lightblue;
         }
+        .gallery-item img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
@@ -67,14 +71,7 @@
     <div class="container">
         <section id="about">
             <h2>About Me</h2>
-            <p>
-            I am a versatile professional with a background spanning naval architecture, design engineering, and data analysis. With a strong foundation in mechanical engineering and specialized knowledge in naval architecture and ocean engineering, I excel in conceptualizing, designing, and optimizing marine structures and offshore platforms. My expertise extends to structural analysis, hydrodynamics, and the application of maritime regulations and classification standards.
-
-As a design engineer, I demonstrate proficiency in CAD software and engineering design principles, translating conceptual ideas into detailed technical drawings and prototypes. My experience includes material selection, manufacturing processes, and quality assurance to ensure designs meet stringent industry standards.
-
-In the realm of data analysis, I leverage my analytical skills to derive insights and optimize performance metrics for maritime projects. I employ statistical modeling, machine learning, and data visualization techniques to inform decision-making and enhance operational efficiency.
-
-I am recognized for my collaborative approach, effectively interfacing with multidisciplinary teams to deliver innovative solutions that align with client objectives and regulatory requirements. My commitment to continuous learning and staying abreast of emerging technologies underscores my dedication to advancing maritime engineering practices.</p>
+            <p>I am a design engineer and naval architect with data analysis and machine learning model creation experience holding degrees in mechanical engineering, naval architecture and ocean engineering, and ship and offshore technology from national and international universities.</p>
         </section>
         <section id="projects">
             <h2>Projects</h2>
@@ -89,6 +86,18 @@ I am recognized for my collaborative approach, effectively interfacing with mult
                     <p>Brief description of project 2.</p>
                 </div>
                 <!-- Add more projects as needed -->
+            </div>
+        </section>
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery">
+                <!-- Add images of your work -->
+                <div class="gallery-item">
+                    <<img src="boatcarvan.jpeg" alt="boatcarvan Image">
+                    <<img src="IMG-0597.jpg" alt="IMG-0597.jpg">
+                    
+                </div>
+                <!-- Add more images as needed -->
             </div>
         </section>
         <section id="skills">
